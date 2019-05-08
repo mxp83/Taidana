@@ -1,1 +1,46 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+
+	.navbar-overlay {
+		li {
+			a {
+				&:focus {
+					outline:0;
+				}
+			}
+		}
+	}
+
+	.dropdown-menu {
+		border: 0;
+	    border-radius: 0;
+	    top: 25px;
+	}
+	#socials-box {
+		text-align: center;
+	}
+	.socials {
+		display:inline-block;
+	}
+	#footer-wpb {
+		ul {
+			list-style:none;
+
+			li {
+				a {
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				.sub-menu {
+					padding-left:0;
+				}
+			}
+		}
+	}
+}

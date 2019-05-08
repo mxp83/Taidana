@@ -55,17 +55,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavOverlay" aria-controls="navbarNavOverlay" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+				<button class="nav-button" type="button" data-toggle="overlay" data-target="#navbarNavOverlay" aria-controls="navbarNavOverlay" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+					<span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'fade navbar-collapse',
+						'container_class' => 'navbar-overlay',
 						'container_id'    => 'navbarNavOverlay',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav ml-auto nav-open',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,

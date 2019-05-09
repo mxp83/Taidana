@@ -26,21 +26,39 @@ body {
 		display:inline-block;
 	}
 	#footer-wpb {
-		ul {
-			list-style:none;
+		margin-top:30px;
 
-			li {
-				a {
-					text-decoration: none;
+		#footer-links {
+			text-align: right;
+			ul {
+				list-style:none;
 
-					&:hover {
+				li {
+					a {
 						text-decoration: none;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					.sub-menu {
+						padding-left:0;
 					}
 				}
-				.sub-menu {
-					padding-left:0;
-				}
 			}
+
 		}
 	}
 }
+//contact form 7
+.wpcf7 {
+	.wpcf7-form {
+		p {
+			margin: 0;
+		}
+	}
+	
+	textarea {
+		height: 170px;
+	}
+} 
